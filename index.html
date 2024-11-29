@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saumili Dutta</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        window.onload = function() {
+            alert("For better view, open from PC or Laptop and click on F11 to watch this page on full screen mode");
+        };
+    </script>
+</head>
+
+
+
+
+
+<body>
+    <!-- Desktop -->
+    <div class="desktop">
+        <!-- Desktop Icons -->
+        <div class="desktop-icons">
+            <div class="notepad-icon" onclick="openNotepad('about')">
+                <img src="assets/about.png" alt="notepad icon">
+                <span>About Me</span>
+            </div>
+
+            <div class="notepad-icon" onclick="openNotepad('education')">
+                <img src="assets/edu.png" alt="notepad icon">
+                <span>Education</span>
+            </div>
+
+            <div class="notepad-icon" onclick="openNotepad('skills')">
+                <img src="assets/skills.png" alt="notepad icon">
+                <span>Skills</span>
+            </div>
+
+            <div class="notepad-icon" onclick="openNotepad('projects')">
+                <img src="assets/projects.png" alt="notepad icon">
+                <span>Projects</span>
+            </div>
+
+            <div class="notepad-icon" onclick="openNotepad('communities')">
+                <img src="assets/community.png" alt="notepad icon">
+                <span>Communities</span>
+            </div>
+
+            <div class="notepad-icon" onclick="openNotepad('contact')">
+                <img src="assets/contact.png" alt="notepad icon">
+                <span>Contact</span>
+            </div>
+
+            <div class="video-icon" onclick="openVideo()">
+                <img src="assets/video.png" alt="video icon">
+                <span>Watch Video</span>
+            </div>
+        </div>
+
+
+
+
+        <!-- Notepad Windows -->
+        <div class="notepad" id="notepad-about">
+            <div class="notepad-header">
+                <!-- About me -->
+                <span>About Me</span>
+                <button onclick="closeNotepad('about')">&times;</button>
+            </div>
+
+
+            <div class="notepad-content">
+                <p style="color: blue;">
+                    <strong>Hello!</strong> <br /><br />
+
+                    I'm <strong>Saumili Dutta</strong>, a <em>recent Software Development graduate from Asutosh College</em>. I've learned multiple programming languages, tackled challenges, and gained hands-on experience through various projects. My passion for continuous learning has led me to earn certifications in SQL, Microsoft Office, Communication Skills, Python, and API. I was also a mentee in Infosys Pragati.<br /><br />
+
+                    As an active member and leader in several communities, I’ve honed teamwork and communication skills. I also manage a Hashnode blog and a YouTube channel, handling everything from planning to publishing. I’m excited to collaborate with you!
+                </p>
+            </div>
+        </div>
+
+
+
+        <div class="notepad" id="notepad-education">
+            <div class="notepad-header">
+                <!-- Education -->
+                <span>Education</span>
+                <button onclick="closeNotepad('education')">&times;</button>
+            </div>
+
+
+            <div class="notepad-content">
+                <div>
+                    <h3> Graduation </h3>
+                    <a href="https://asutoshcollege.in/new-web/" target="_blank">Asutosh College, Kolkata</a><br />
+                    B.Voc in Software Development<br />
+                    CGPA: 8.99, Oct'21 - Jul'24<br /><br /><br />
+                </div>
+
+                <div>
+                    <h3> School </h3>
+                    <!-- 12th -->
+                    <a href="https://nghss.org/" target="_blank">National Gems Higher Secondary School, Kolkata</a><br />
+                    Biology in 10 + 2, class of 2019<br />
+                    Apr'19 - May'20<br /><br />
+
+                    <!-- 10th -->
+                    Economics in 10, class of 2017<br />
+                    Apr'17 - Mar'18
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="notepad" id="notepad-skills">
+            <div class="notepad-header">
+                <!-- Skills -->
+                <span>Skills</span>
+                <button onclick="closeNotepad('skills')">&times;</button>
+            </div>
+
+
+            <div class="notepad-content">
+                <div class="skills">
+                    <div> <!-- Technical skills -->
+                        <h2>Techical skills</h2><br /><br />
+                        <ul>
+                            <li>HTML</li><br />
+                            <li>Python</li><br />
+                            <li>SQL</li><br />
+                            <li>API</li><br />
+                            <li>GitHub</li><br />
+                            <li>Prompt designing</li><br />
+                            <li>Microsoft Office</li><br />
+                        </ul>
+                    </div>
+
+                    <div><!-- Soft skills -->
+                        <h2>Soft skills</h2><br /><br />
+                        <ul>
+                            <li>Teamwork</li><br />
+                            <li>Communication</li><br />
+                            <li>Problem Solving</li><br />
+                            <li>Presentation</li><br />
+                            <li>Time Management</li><br />
+                            <li>Adaptability</li><br />
+                            <li>Planning</li><br />
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="notepad" id="notepad-projects">
+            <div class="notepad-header">
+                <!-- Projects -->
+                <span>Projects</span>
+                <button onclick="closeNotepad('projects')">&times;</button>
+            </div>
+
+
+            <div class="notepad-content">
+                <div class="display-project">
+                    <div class="surround-project">
+                        <a href="https://osdevcommunity.vercel.app/" target="_blank">
+                            <img src="assets/oslogo.png" alt="OS Community" width="50px" height="50px">
+                            <p>OS Community</p>
+                        </a>
+                    </div>
+
+                    <div class="surround-project">
+                        <a href="https://saumilidutta.vercel.app/" target="_blank">
+                            <img src="assets/portfolio.png" alt="portfolio" width="50px" height="50px">
+                            <p>Portfolio</p>
+                        </a>
+                    </div>
+
+                    <div class="surround-project">
+                        <a href="https://aumiidutta.github.io/Linktree/" target="_blank">
+                            <img src="assets/linktree2.png" alt="Linktree" width="50px" height="50px">
+                            <p>Linktree</p>
+                        </a>
+                    </div>
+
+                    <div class="surround-project">
+                        <a href="https://github.com/aumiidutta/CodexSearch" target="_blank">
+                            <img src="assets/CodexSearch.png" alt="Codex Search" width="50px" height="50px">
+                            <p>Codex Search</p>
+                        </a>
+                    </div>
+                </div>
+
+
+                <div class="display-project">
+                    <div class="surround-project">
+                        <a href="https://github.com/aumiidutta/NovaBotics" target="_blank">
+                            <img src="assets/NovaBotics.png" alt="NovaBotics" width="50px" height="50px">
+                            <p>NovaBotics</p>
+                        </a>
+                    </div>
+
+                    <div class="surround-project">
+                        <a href="https://github.com/aumiidutta/streamX" target="_blank">
+                            <img src="assets/streamX.png" alt="streamX" width="50px" height="50px">
+                            <p>streamX</p>
+                        </a>
+                    </div>
+
+                    <div class="surround-project">
+                        <a href="https://github.com/aumiidutta/AI-Text-Summarizer" target="_blank">
+                            <img src="assets/aisummariser.png" alt="AI Text Summarizer" width="50px" height="50px">
+                            <p>AI Text Summarizer</p>
+                        </a>
+                    </div>
+
+                    <div class="surround-project">
+                        <a href="https://github.com/aumiidutta/Registration" target="_blank">
+                            <img src="assets/regt.png" alt="Registration" width="50px" height="50px">
+                            <p>Registration</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="notepad" id="notepad-communities">
+            <div class="notepad-header">
+                <!-- Communities -->
+                <span>Communities</span>
+                <button onclick="closeNotepad('communities')">&times;</button>
+            </div>
+
+
+            <div class="notepad-content">
+                <div>
+                    <h3>Leadership</h3>
+                    <a href="https://osdevcommunity.vercel.app/" target="_blank">OS Community</a>,
+                    Community for Developers<br />
+                    Kolkata Chapter Lead<br />
+                    Apr'23 - Present<br /><br /><br />
+                </div>
+
+                <div>
+                    <h3>Volunteering</h3>
+                    <a href="https://www.meetup.com/awsugkol/" target="_blank">AWS user Group Kolkata</a>,
+                    AWS local community<br />
+                    Volunteer<br />
+                    Mar'24 - Present<br /><br />
+                </div>
+            </div>
+        </div>        
+
+
+
+        <div class="notepad" id="notepad-contact">
+            <div class="notepad-header">
+                <!-- Contact -->
+                <span>Contact</span>
+                <button onclick="closeNotepad('contact')">&times;</button>
+            </div>
+
+
+            <div class="notepad-content">
+                <div class="info-contact"> <!-- LinkedIn -->
+                    <img src="assets/LinkedIn.jpeg" alt="email"  width="30px" height="30px">
+                    <a href="https://www.linkedin.com/in/saumilidutta" target="_blank">
+                        <span>https://www.linkedin.com/in/saumilidutta</span>
+                    </a>
+                </div>
+
+                <div class="info-contact"> <!-- X --> 
+                    <img src="assets/X.png" alt="email"  width="30px" height="30px">
+                    <a href="https://twitter.com/aumiidutta" target="_blank">
+                        <span>https://twitter.com/aumiidutta</span>
+                    </a>
+                </div>
+
+                <div class="info-contact"> <!-- YT -->
+                    <img src="assets/yt.png" alt="email"  width="30px" height="30px">
+                    <a href="https://www.youtube.com/@saumilidutta" target="_blank">
+                        <span>https://www.youtube.com/@saumilidutta</span>
+                    </a>
+                </div>
+
+                <div class="info-contact"> <!-- github -->
+                    <img src="assets/GitHub.png" alt="email"  width="30px" height="30px">
+                    <a href="https://github.com/aumiidutta" target="_blank">
+                        <span>https://github.com/aumiidutta</span>
+                    </a>
+                </div>
+
+                <div class="info-contact"> <!-- hashnode -->
+                    <img src="assets/hashnode.png" alt="email"  width="30px" height="30px">
+                    <a href="https://saumilidutta.hashnode.dev/" target="_blank">
+                        <span>https://saumilidutta.hashnode.dev/</span>
+                    </a>
+                </div>
+
+                <div class="info-contact"> <!-- old portfolio -->
+                    <img src="assets/portfolio.png" alt="email"  width="30px" height="30px">
+                    <a href="https://saumilidutta.vercel.app" target="_blank">
+                        <span>Old Portfolio</span>
+                    </a>
+                </div>
+                
+                <div class="info-contact"> <!-- linktree -->
+                    <img src="assets/linktree.png" alt="email"  width="30px" height="30px">
+                    <a href="https://aumiidutta.github.io/Linktree/" target="_blank">
+                        <span>Linktree</span>
+                    </a>
+                </div>
+
+                <div class="info-contact"> <!-- resume -->
+                    <img src="assets/portfolio.png" alt="email"  width="30px" height="30px">
+                    <a href="assets/Resume.pdf" target="_blank">
+                        <span>Resume</span>
+                    </a>
+                </div>
+
+                <div class="info-contact"> <!-- email -->
+                    <img src="assets/Gmail.png" alt="email"  width="30px" height="30px">
+                    <a href="mailto:saumili.work@gmail.com" target="_blank">
+                        <span>Send me an email</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+    
+        <!-- Video Popup -->
+        <div class="video-popup" id="videoPopup">
+            <button class="close-btn" onclick="closeVideo()">✖</button>
+            <video id="popupVideo" controls>
+                <source src="assets/Introduction.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+
+
+
+
+    <!-- Taskbar -->
+    <div class="taskbar">
+        <div class="taskbar-center">
+            <button class="start-btn">
+                <i class="fab fa-windows"></i>
+            </button>
+
+
+            <div class="search-container">
+                <input type="text" id="search-box" placeholder="Search">
+                <button id="search-submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <div id="search-suggestions" class="search-suggestions"></div>
+            </div>
+
+
+            <div class="taskbar-apps">
+                <button><a href="https://www.google.co.in/" target="_blank"><i class="fab fa-chrome"></i></a></button>
+                <button><a href="https://vscode.dev/" target="_blank"><i class="fas fa-code"></i></a></button>
+                <button><a href="https://teams.live.com/v2/?utm_source=OfficeWeb" target="_blank"><i class="fas fa-video"></i></a></button>
+                <button><a href="https://web.whatsapp.com/" target="_blank"><i class="fab fa-whatsapp"></i></a></button>
+                <button><a href="Home" target="_blank"><i class="far fa-folder"></i></a></button>
+                <button><a href="https://www.accuweather.com/" target="_blank"><i class="fas fa-cloud" id="weather-icon"></i></a></button>
+            </div>
+        </div>
+
+
+        <div class="taskbar-right">
+            <p class="date" id="date"></p>
+            <p class="time" id="time"></p>
+        </div>        
+    </div>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
